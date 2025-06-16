@@ -21,18 +21,21 @@
   word-spacing: 25px;
   color: hsl(233, 8%, 61%);
 }
-.nav-items span {
+.nav-items a {
   position: relative;
+  list-style: none;
+  text-decoration: none;
   cursor: pointer;
   padding-bottom: 30px;
   font-size: 20px;
 }
 
 /* Underline effect on hover */
-.nav-items span::after {
+.nav-items a::after {
   content: "";
   position: absolute;
   left: 0;
+
   bottom: 0;
   width: 0px;
   height: 5px;
@@ -41,8 +44,9 @@
   transition: width 0.3s ease;
 }
 
-.nav-items span:hover::after {
+.nav-items a:hover::after {
   width: 100%;
+ 
 }
 
 
@@ -384,7 +388,7 @@
   gap: 20px;
 }
 
-.menu-panel .nav-items span:hover {
+.menu-panel .nav-items a:hover {
   font-size: 18px;
   cursor: pointer;
   color: hsl(233, 26%, 24%);
